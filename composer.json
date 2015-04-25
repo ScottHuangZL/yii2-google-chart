@@ -1,8 +1,8 @@
 {
-    "name": "ScottHuangZL/yii2-google-chart",
+    "name": "scott-hzl/yii2-google-chart",
     "description": "A wraper for google chart",
     "type": "yii2-extension",
-    "keywords": ["ScottHuangZL","hzl","yii2","extension","google chart","widget"],
+    "keywords": ["scott huang","hzl","yii2","extension","google chart","widget"],
     "license": "BSD-3-Clause",
     "authors": [
         {
@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "ScottHuangZL\\googlechart\\": ""
+            "scott-hzl\\googlechart\\": ""
         }
     }
 }
