@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require scott-hzl/yii2-google-chart "dev-master"
+php composer.phar require scotthuangzl/yii2-google-chart "dev-master"
 ```
 
 or add
 
 ```
-"scott-hzl/yii2-google-chart": "dev-master"
+"scotthuangzl/yii2-google-chart": "dev-master"
 ```
 
 to the require section of your `composer.json` file.
