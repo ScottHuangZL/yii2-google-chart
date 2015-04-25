@@ -1,5 +1,5 @@
 {
-    "name": "scott-hzl/yii2-google-chart",
+    "name": "scotthuangzl/yii2-google-chart",
     "description": "A wraper for google chart",
     "type": "yii2-extension",
     "keywords": ["scott huang","hzl","yii2","extension","google chart","widget"],
@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "scott-hzl\\googlechart\\": ""
+            "scotthuangzl\\googlechart\\": ""
         }
     }
 }

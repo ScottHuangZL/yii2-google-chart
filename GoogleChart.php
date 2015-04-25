@@ -1,6 +1,6 @@
 <?php
 
-namespace scotthzl\googlechart;
+namespace scotthuangzl\googlechart;
 
 use yii\base\Widget;
 use yii\helpers\Html;

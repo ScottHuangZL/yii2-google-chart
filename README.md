@@ -28,7 +28,7 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-use ScottHuangZL\googlechart\GoogleChart;
+use scotthuangzl\googlechart\GoogleChart;
     echo GoogleChart::widget(array('visualization' => 'PieChart',
         'data' => array(
             array('Task', 'Hours per Day'),
