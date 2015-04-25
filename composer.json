@@ -1,0 +1,21 @@
+{
+    "name": "hzl/yii2-google-chart",
+    "description": "A wraper for google chart",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","google chart"],
+    "license": "BSD-4-Clause",
+    "authors": [
+        {
+            "name": "Scott Huang",
+            "email": "zhiliang.huang@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\hzl\\googlechart\\": ""
+        }
+    }
+}
