@@ -1,6 +1,6 @@
 <?php
 
-namespace hzl\googlechart;
+namespace ScottHuangZL\googlechart;
 
 use yii\base\Widget;
 use yii\helpers\Html;
@@ -62,7 +62,7 @@ class GoogleChart extends Widget
 
     public function run()
     {
-//        return Html::encode($this->message);
+
         $id = $this->getId();
         // if no container is set, it will create one
         if ($this->containerId == null) {
@@ -71,6 +71,7 @@ class GoogleChart extends Widget
             echo '<div ' . Html::renderTagAttributes($this->htmlOptions) . '></div>';
         }
         $this->registerClientScript($id);
+        //return Html::encode($this->message);
     }
 
     /**
@@ -96,7 +97,7 @@ class GoogleChart extends Widget
 
         $view = $this->getView();
         $view->registerJsFile('https://www.google.com/jsapi');
-        $view->registerJs('google.load("visualization", "' . $this->loadVersion . '", {packages:["' . $this->packages . '"]});', View::POS_HEAD,__CLASS__ . '#' . $id);
+        $view->registerJs('google.load("visualization", "' . $this->loadVersion . '", {packages:["' . $this->packages . '"]});', View::POS_HEAD, __CLASS__ . '#' . $id);
         $view->registerJs($script, View::POS_HEAD, $id);
     }
 
