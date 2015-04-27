@@ -116,6 +116,9 @@ You also can refer to https://developers.google.com/chart/interactive/docs/quick
                 )));
             ?>
         </div>
+```
 
+Sample picture
+-----
 You also can find the demo result from:
 http://www.yiiframework.com/extension/yii2-google-chart/
