@@ -29,6 +29,8 @@ Once the extension is installed, simply use it in your code by  :
 Btw, it may be not work in China in case you cannot access https://www.google.com/jsapi
 Thanks.
 
+You also can refer to https://developers.google.com/chart/interactive/docs/quick_start
+
 ```php
 
     <div class="col-sm-5">
