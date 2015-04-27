@@ -117,8 +117,5 @@ You also can refer to https://developers.google.com/chart/interactive/docs/quick
             ?>
         </div>
 
-<<<<<<< HEAD
-```
-=======
-```
->>>>>>> 0a5bc6e7a89783540aa88031156b2c7e5f62ccb8
+You also can find the demo result from:
+http://www.yiiframework.com/extension/yii2-google-chart/
