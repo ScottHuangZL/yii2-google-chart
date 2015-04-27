@@ -11,7 +11,13 @@ use yii\web\View;
 
 
 /**
- * This is just an example.
+ * An widget to wrap google chart for Yii Framework 2
+ * by Scott Huang
+ *
+ * @see https://github.com/ScottHuangZL/yii2-google-chart
+ * @author Scott Huang <zhiliang.huang@gmail.com>
+ * @since 0.2
+ * @Xiamen China
  */
 class GoogleChart extends Widget
 {
@@ -64,6 +70,7 @@ class GoogleChart extends Widget
     {
 
         $id = $this->getId();
+        if (isset($this->options['id']) and !empty($this->options['id'])) $id = $this->options['id'];
         // if no container is set, it will create one
         if ($this->containerId == null) {
             $this->htmlOptions['id'] = 'div-chart' . $id;
@@ -96,7 +103,7 @@ class GoogleChart extends Widget
 			}';
 
         $view = $this->getView();
-        $view->registerJsFile('https://www.google.com/jsapi');
+        $view->registerJsFile('https://www.google.com/jsapi',['position' => View::POS_HEAD]);
         $view->registerJs('google.load("visualization", "' . $this->loadVersion . '", {packages:["' . $this->packages . '"]});', View::POS_HEAD, __CLASS__ . '#' . $id);
         $view->registerJs($script, View::POS_HEAD, $id);
     }
