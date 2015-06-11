@@ -78,6 +78,20 @@ You also can refer to https://developers.google.com/chart/interactive/docs/quick
                     'curveType' => 'function', //smooth curve or not
                     'legend' => array('position' => 'bottom'),
                 )));
+                
+            echo GoogleChart::widget(array('visualization' => 'ScatterChart',
+                'data' => array(
+                    array('Sales', 'Expenses', 'Quarter'),
+                    array(1000, 400, '2015 Q1'),
+                    array(1170, 460, '2015 Q2'),
+                    array(660, 1120, '2015 Q3'),
+                    array(1030, 540, '2015 Q4'),
+                ),
+                'scriptAfterArrayToDataTable' => "data.setColumnProperty(2, 'role', 'tooltip');",
+                'options' => array(
+                    'title' => 'Expenses vs Sales',
+                )));
+                
             echo GoogleChart::widget( array('visualization' => 'Gauge', 'packages' => 'gauge',
                 'data' => array(
                     array('Label', 'Value'),

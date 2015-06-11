@@ -52,6 +52,11 @@ class GoogleChart extends Widget
      * @see https://google-developers.appspot.com/chart/interactive/docs/customizing_charts
      */
     public $options = array();
+    
+    /**
+     * @var string $scriptAfterArrayToDataTable additional javascript to execute after arrayToDataTable is called
+     */
+    public $scriptAfterArrayToDataTable = '';
 
     /**
      * @var array $htmlOption the HTML tag attributes configuration
@@ -95,6 +100,8 @@ class GoogleChart extends Widget
 			var ' . $id . '=null;
 			function drawChart' . $id . '() {
 				var data = google.visualization.arrayToDataTable(' . $jsData . ');
+
+				' . $this->scriptAfterArrayToDataTable . '
 
 				var options = ' . $jsOptions . ';
 
