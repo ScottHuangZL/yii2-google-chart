@@ -1,8 +1,8 @@
 {
-    "name": "scotthuangzl/yii2-google-chart",
-    "description": "A wraper for google chart",
+    "name": "johnsnook/yii2-google-chart",
+    "description": "A wrapper for google chart",
     "type": "yii2-extension",
-    "keywords": ["scott huang","hzl","yii2","extension","google chart","widget"],
+    "keywords": ["John Snook", "yii2","extension","google chart","widget"],
     "license": "BSD-3-Clause",
     "authors": [
         {
@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "scotthuangzl\\googlechart\\": ""
+            "johnsnook\\googlechart\\": "/src"
         }
     }
 }
