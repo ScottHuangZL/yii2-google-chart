@@ -25,10 +25,6 @@
     },
     "repositories": [
         {
-            "type": "path",
-            "url": "/var/www/johnsnook/yii2-google-graph"
-        },
-        {
             "type": "composer",
             "url": "https://asset-packagist.org"
         }
