@@ -1,6 +1,6 @@
 Google Chart
 ============
-A wraper for google chart
+A wrapper for google charts
 
 Installation
 ------------
@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require scotthuangzl/yii2-google-chart "dev-master"
+php composer.phar require johnsnook/yii2-google-charts "dev-master"
 ```
 
 or add
 
 ```
-"scotthuangzl/yii2-google-chart": "dev-master"
+"johnsnook/yii2-google-charts": "dev-master"
 ```
 
 to the require section of your `composer.json` file.
@@ -26,16 +26,13 @@ Usage
 -----
 
 Once the extension is installed, simply use it in your code by  :
-Btw, it may be not work in China in case you cannot access https://www.google.com/jsapi
-Thanks.
 
-You also can refer to https://developers.google.com/chart/interactive/docs/quick_start
 
 ```php
 
     <div class="col-sm-5">
             <?php
-            use scotthuangzl\googlechart\GoogleChart;
+            use johnsnook\googlechart\GoogleChart;
     
             echo GoogleChart::widget(array('visualization' => 'PieChart',
                 'data' => array(
@@ -132,7 +129,7 @@ You also can refer to https://developers.google.com/chart/interactive/docs/quick
         </div>
 ```
 
+You also can refer to https://developers.google.com/chart/interactive/docs/quick_start
+
 Sample picture
 -----
-You also can find the demo result from:
-http://www.yiiframework.com/extension/yii2-google-chart/
